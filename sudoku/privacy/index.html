@@ -3,70 +3,74 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Sudoku</title>
-<link rel="stylesheet" href="/style.css">
+<title>Privacy Policy — Sudoku: In Your Element</title>
+<link rel="stylesheet" href="../../style.css">
 </head>
 <body>
 
-<h1>Privacy Policy — Sudoku</h1>
-<p class="sub">Effective date: October 3, 2026 · App: Sudoku (<code>com.whizkidworld.sudoku</code>)</p>
+<h1>Privacy Policy — Sudoku: In Your Element</h1>
+<p class="sub">Effective date: October 7, 2026 · App: Sudoku: In Your Element (<code>com.whizkidworld.sudoku</code>)</p>
 
-<p>Sudoku is published by <strong>Whizkid World LLP</strong> ("we", "us"), which
-is responsible for the information described here.</p>
-
-<p>This policy describes what information the Sudoku app handles and how. The
-short version: your puzzles, scores, and settings stay on your device. Six things do leave it — what Google AdMob collects to serve ads, crash and
-stability reports sent to Google Firebase Crashlytics, a daily request for that
-day's shared puzzle, anonymous usage statistics, a periodic check for
-settings we can adjust without an update, and — only if you choose to leave one —
-a rating through Google Play's own in-app review card. Each is described below.</p>
-
+<p>Sudoku is published by <strong>Whizkid World LLP</strong> ("we", "us"), which is responsible for the information described here.</p>
+<p>This policy describes what information the app handles and how. The short version: your puzzles, scores, and settings stay on your device. Eight things do leave it:</p>
+<ol>
+  <li>What Google AdMob collects to show ads</li>
+  <li>Crash and stability reports, sent to Google Firebase Crashlytics</li>
+  <li>A daily request for that day's shared puzzle</li>
+  <li>Anonymous usage statistics</li>
+  <li>A periodic check for settings we can adjust without an update</li>
+  <li>Only if you choose to leave one, a rating through Google Play's in-app review card</li>
+  <li>Only while you are signed in to it, Google Play Games, for cloud save, leaderboards and achievements</li>
+  <li>Only if you buy it, Remove ads, through Google Play</li>
+</ol>
+<p>Each is described below.</p>
+<p>Where this policy points to a place in the app, <strong>Player</strong> means the third tab at the bottom of the screen. It shows your name once you have set one, and "Player" until then.</p>
 <h2>Data stored on your device only</h2>
-<p>The app stores the following locally, on your device, and does not upload it
-or link it to you:</p>
+<p>The app stores the following locally, on your device. It does not transmit it anywhere unless you are signed in to Google Play Games (see below):</p>
 <ul>
   <li>Game progress (in-progress puzzles, notes, timers)</li>
   <li>Score history and achievements</li>
   <li>Daily-challenge history and streaks</li>
   <li>Settings and preferences</li>
-  <li>Your local profile (a display name and avatar you choose — these are not
-      linked to your identity and never leave the device)</li>
+  <li>Your local profile (a display name and avatar you choose — these are not linked to your identity, and leave the device only inside your own Google Play Games cloud save, never on a leaderboard)</li>
 </ul>
-<p>You can erase all of this at any time from inside the app (see
-<a href="#deleting">Deleting your data</a> below), by clearing the app's data in
-Android settings, or by uninstalling the app. The app has no user accounts in
-this version, and none of the above is uploaded or linked to you.</p>
-
-<h2>Usage statistics (Google Firebase Analytics)</h2>
-<p>The app reports anonymous statistics about how it is used, so we can tell
-whether the game is too hard, whether hints run out too quickly, and whether ads
-appear too often. A report contains:</p>
+<p>You can erase all of this at any time by clearing the app's data in Android settings or uninstalling the app. The app has no accounts of its own; the only sign-in it offers is Google Play Games, which is optional.</p>
+<h2>The daily puzzle</h2>
+<p>Each day's puzzle is the same for everyone, so the app fetches it from our server (hosted on Supabase). The request is anonymous and one-way: it asks for that date's puzzle and sends nothing about you, your progress or your device beyond what any internet request necessarily carries — principally your IP address. Our hosting provider records that address in its request logs, along with the approximate location it implies (country, region and city), and deletes those logs after no more than seven days. Nothing in them is linked to a person, and this version of the app has no accounts to link them to.</p>
+<p>If the app has no connection it generates the same puzzle on your device instead, so the daily challenge works offline.</p>
+<h2>Crash and stability reporting (Google Firebase Crashlytics)</h2>
+<p>When the app crashes, a report is sent to Google Firebase Crashlytics so we can find and fix the fault. A report contains:</p>
 <ul>
-  <li>Which difficulty a game was started at, and whether it was finished,
-      abandoned or restarted</li>
-  <li>Roughly how long a game took, as a range rather than an exact time</li>
-  <li>How many hints and mistakes a game used</li>
-  <li>When an ad was shown, and how long since the previous one</li>
-  <li>An installation identifier generated by Firebase, which distinguishes one
-      install from another. It is not your Advertising ID, is not linked to your
-      identity, and is reset if you clear the app's data or uninstall.</li>
+  <li>The error and the stack trace — which part of the code failed</li>
+  <li>Device and system information: model, manufacturer, operating-system version, available memory and storage, orientation, and whether the device was rooted</li>
+  <li>The app version and how long it had been running</li>
+  <li>An installation identifier generated by Firebase, which distinguishes one install from another so repeated crashes can be grouped. It is not your Advertising ID, is not linked to your identity, and is reset if you clear the app's data or uninstall.</li>
 </ul>
-<p><strong>We do not send your name, avatar, puzzle contents or scores</strong>,
-and none of it is used for advertising. Times are reported as ranges specifically
-so that a completion time cannot be matched back to an individual player.</p>
-<p>Usage statistics are collected only in the version you install from Google
-Play. Development and test builds of the app report nothing.</p>
-<p>Google processes these on our behalf under the same policies linked below.</p>
-
+<p>Firebase also reports basic <strong>app session</strong> events (that the app was opened and for roughly how long), which is how crash reports are attributed to a run.</p>
+<p><strong>We do not attach your name, email, profile or game data to these reports</strong>, and they are not used for advertising. Google processes them on our behalf under its own policies:</p>
+<ul>
+  <li>Firebase privacy and security: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+  <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+<p>Crash reporting is off in development builds of the app and on in the version you install from Google Play.</p>
+<h2>Usage statistics (Google Firebase Analytics)</h2>
+<p>The app reports anonymous statistics about how it is used, so we can tell whether the game is too hard, whether hints run out too quickly, and whether ads appear too often. A report contains:</p>
+<ul>
+  <li>Which difficulty a game was started at, and whether it was finished, abandoned or restarted</li>
+  <li>Roughly how long a game took, as a range rather than an exact time</li>
+  <li>How many hints and mistakes a game used, and, for a game left unfinished, how many cells had been filled</li>
+  <li>When an ad was shown, and how long since the previous one</li>
+  <li>Whether an optional video ad (for an extra hint or a second chance) was watched to the end</li>
+  <li>If you buy Remove ads: that a purchase was made, which product and its price. Firebase records purchases made through Google Play on its own.</li>
+  <li>An installation identifier generated by Firebase, which distinguishes one install from another. It is not your Advertising ID, is not linked to your identity, and is reset if you clear the app's data or uninstall.</li>
+</ul>
+<p><strong>We do not send your name, avatar, puzzle contents or scores</strong>, and none of it is used for advertising. Times are reported as ranges specifically so that a completion time cannot be matched back to an individual player.</p>
+<p>Usage statistics are collected only in the version you install from Google Play. Development and test builds of the app report nothing.</p>
+<p>Google processes these on our behalf under the same policies linked above.</p>
 <h2>Settings we can change without an update</h2>
-<p>The app periodically asks our provider (Google Firebase) for a small set of
-values — how often ads may appear, how many free hints a game starts with. The
-request carries the same installation identifier and nothing about you. If it
-fails, the app uses the values it shipped with.</p>
-
+<p>The app periodically asks our provider (Google Firebase) for a small set of values — how often ads may appear, how many free hints a game starts with. The request carries the same installation identifier and nothing about you. If it fails, the app uses the values it shipped with.</p>
 <h2>Advertising (Google AdMob)</h2>
-<p>The app shows ads served by Google AdMob. Google collects and shares the
-following for advertising, analytics and fraud prevention:</p>
+<p>The app shows ads served by Google AdMob. Google collects and shares the following for advertising, analytics and fraud prevention:</p>
 <ul>
   <li>Advertising ID (a resettable identifier) and other device identifiers</li>
   <li>IP address and coarse (city-level) location derived from it</li>
@@ -75,108 +79,43 @@ following for advertising, analytics and fraud prevention:</p>
 </ul>
 <p>This collection is performed by Google under its own policies:</p>
 <ul>
-  <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a></li>
-  <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li>How Google uses information from apps that use its services: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></li>
+  <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
 </ul>
-<p>In regions that require it (e.g. the EEA/UK), the app asks for your consent
-before showing personalized ads, and you can choose non-personalized ads. You
-can change that choice at any time in the app: <strong>Me → Privacy →
-Personalised ads</strong>. You can also reset or delete your Advertising ID in
-Android settings (Settings → Privacy → Ads).</p>
-
-<h2>The daily puzzle</h2>
-<p>Each day's puzzle is the same for everyone, so the app fetches it from our
-server (hosted on Supabase). The request is anonymous and one-way: it asks for
-that date's puzzle and sends nothing about you, your progress or your device
-beyond what any internet request necessarily carries — principally your IP
-address. Our hosting provider records that address in its request logs, along
-with the approximate location it implies (country, region and city), and deletes
-those logs after no more than seven days. Nothing in them is linked to a person,
-and this version of the app has no accounts to link them to.</p>
-<p>If the app has no connection it generates the same puzzle on your device
-instead, so the daily challenge works offline.</p>
-
-<h2>Crash and stability reporting (Google Firebase Crashlytics)</h2>
-<p>When the app crashes, a report is sent to Google Firebase Crashlytics so we
-can find and fix the fault. A report contains:</p>
+<p>In regions that require it (e.g. the EEA/UK), the app asks for your consent before showing personalized ads, and you can choose non-personalized ads. You can change that choice at any time in the app: <strong>Player → Privacy → Personalised ads</strong>. Elsewhere, ads may be personalised using your phone's Advertising ID. You can turn that off, or reset or delete the ID, in Android settings (Settings → Privacy → Ads); <strong>Player → Privacy → Open ad settings</strong> takes you there.</p>
+<h2>Purchases (Google Play)</h2>
+<p>The app sells one thing, <strong>Remove ads</strong>, which turns off the full-screen ads between games. Payment is handled entirely by Google Play under Google's own terms and privacy policy; we never see your payment details. The app asks Google Play whether your Google account owns Remove ads and remembers the answer on your device, so the ads stay off while you are offline; after a reinstall or on a new phone it asks Google Play again. A refund through Google Play turns the ads back on.</p>
+<h2>Google Play Games</h2>
+<p><strong>Google Play Games</strong> is optional; everything in the app works without it. If you have a Play Games profile and have allowed it, Play Games signs you in automatically when the app starts. You can turn that off in the Play Games app's settings, or sign in later from <strong>Player</strong> in the app. While you are signed in, the app uses Play Games for three things:</p>
 <ul>
-  <li>The error and the stack trace — which part of the code failed</li>
-  <li>Device and system information: model, manufacturer, operating-system
-      version, available memory and storage, orientation, and whether the device
-      was rooted</li>
-  <li>The app version and how long it had been running</li>
-  <li>An installation identifier generated by Firebase, which distinguishes one
-      install from another so repeated crashes can be grouped. It is not your
-      Advertising ID, is not linked to your identity, and is reset if you clear
-      the app's data or uninstall.</li>
+  <li><strong>Cloud save.</strong> Your score history, medals, daily-challenge history, any game in progress, the preferences you have chosen and your local profile are saved to your Google account's Play Games storage, so they can be restored on another phone. It is stored by Google under your account; we do not receive it and cannot read it.</li>
+  <li><strong>Leaderboards.</strong> For each difficulty, your fastest solve made without any help (no hints, no answer checks and no second chances), and the number of daily puzzles you have solved, are sent to Play Games leaderboards. Other players see them next to your <strong>Play Games</strong> profile name and picture, which you manage in Play Games — never the display name you set in this app.</li>
+  <li><strong>Achievements.</strong> When the app awards you a medal it is also unlocked in Play Games.</li>
 </ul>
-<p>Firebase also reports basic <strong>app session</strong> events (that the app
-was opened and for roughly how long), which is how crash reports are attributed
-to a run.</p>
-<p><strong>We do not attach your name, email, profile or game data to these
-reports</strong>, and they are not used for advertising. Google processes them on
-our behalf under its own policies:</p>
-<ul>
-  <li>Firebase privacy and security:
-      <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
-  <li>Google Privacy Policy:
-      <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
-</ul>
-<p>Crash reporting is off in development builds of the app and on in the version
-you install from Google Play.</p>
-
+<p>While you are signed in, Play Games also collects analytics and diagnostics about its own service, which Google uses to keep it stable and improve it.</p>
+<p>Google handles this data under its own privacy policy. You can delete your Play Games profile and everything saved with it from your Play Games profile settings or from your Google Account (myaccount.google.com). Signing out, or turning off automatic sign-in, in the Play Games app stops anything further being sent; what is already on your phone stays there.</p>
 <h2>Rating the app</h2>
-<p>After a good game the app may ask the Google Play Store to show its
-<strong>in-app review</strong> card. The card is Play's, not ours: we send
-nothing, we are not told whether it appeared, and we are never told whether you
-left a review or what it said. Any rating you choose to leave goes to Google
-under your Play account, exactly as it would if you rated the app from the Play
-Store directly.</p>
-<p>You can stop the app asking at all:
-<strong>Me → About Game → I've already reviewed</strong>.</p>
-
+<p>After a good game the app may ask the Google Play Store to show its <strong>in-app review</strong> card. The card is Play's, not ours: we send nothing, we are not told whether it appeared, and we are never told whether you left a review or what it said. Any rating you choose to leave goes to Google under your Play account, exactly as it would if you rated the app from the Play Store directly.</p>
+<p>You can stop the app asking at all: <strong>Player → About Game → I've already reviewed</strong>.</p>
 <h2>Notifications</h2>
-<p>The optional daily-challenge reminder is scheduled entirely on your device.
-It involves no server and can be turned off in the app (Me → Settings →
-Notifications → Daily challenge reminder) or via Android's notification
-settings.</p>
-
+<p>The optional daily-challenge reminder is scheduled entirely on your device. It involves no server and can be turned off in the app (Player → Settings → Notifications → Daily challenge reminder) or via Android's notification settings.</p>
 <h2>Children</h2>
-<p>The app is a general-audience puzzle game. We do not knowingly collect
-personal information from children; the third-party data collection is the AdMob
-advertising, the Firebase crash reporting and the usage statistics described
-above.</p>
-
+<p>The app is for players aged 16 and over. We do not knowingly collect personal information from children. The third-party data collection is the AdMob advertising, the Firebase crash reporting and usage statistics, Google Play Games while you are signed in to it, and Remove ads through Google Play if you buy it, all described above.</p>
+<p><strong>Age signals from Google Play.</strong> Where the law requires it (currently Texas in the United States, and Brazil, with more places to follow), Google Play can tell the app a player's age range — never a birthdate. The app asks Google Play for it on your device and keeps the answer only on your device. If Google Play says a player is under 18, the app shows only non-personalised ads suitable for a family audience and sends no usage statistics. If it says a parent has not approved this version of the app for a supervised account, the app waits for that approval before it can be played. Everywhere else Google Play gives no age, and nothing changes.</p>
 <h2>Future versions</h2>
-<p>A future update may add optional accounts (email or Google sign-in) with
-online leaderboards. If and when that ships, this policy will be updated first
-to describe exactly what would be collected (email address, chosen display
-name, and puzzle scores) and how to delete it. Nothing in the current version
-creates an account or uploads your data.</p>
-
+<p>If a future update sends anything not described here, this policy will be updated first. The app does not create an account with us, and we do not run one.</p>
 <h2 id="deleting">Deleting your data</h2>
-<p>Everything this app stores on your device can be erased in one step:
-<strong>Me → Privacy → Delete all app data</strong> removes scores, medals,
-daily-challenge history, your profile, every preference and any game in
-progress. Uninstalling the app does the same.</p>
-<p>Crash reports are different, and we would rather say so plainly. Firebase
-Crashlytics keeps them for 90 days and then deletes them. A report carries
-nothing that identifies you, so we have no way to find yours among others and
-delete it sooner; it is removed on that schedule along with everything else.</p>
-<p>The one thing that is not ours to delete is the advertising identifier used by
-AdMob, which Android controls — you can reset or delete it in Settings → Privacy
-→ Ads, as described above.</p>
-
+<p>Everything this app stores on your device can be erased in one step: <strong>Player → Privacy → Delete all app data</strong> removes scores, medals, daily-challenge history, your profile, every preference and any game in progress. Uninstalling the app does the same.</p>
+<p>Crash reports are different, and we would rather say so plainly. Firebase Crashlytics keeps them for 90 days and then deletes them. A report carries nothing that identifies you, so we have no way to find yours among others and delete it sooner; it is removed on that schedule along with everything else.</p>
+<p>If you have used Google Play Games, its cloud save, leaderboard entries and achievements are held by Google under your account, not by us: delete them from Play Games' own settings, as described above. Deleting the app's data on your phone does not delete them.</p>
+<p>The one thing that is not ours to delete is the advertising identifier used by AdMob, which Android controls — you can reset or delete it in Settings → Privacy → Ads, as described above.</p>
 <h2>Contact</h2>
-<p>Whizkid World LLP. Questions or requests about this policy:
-<a href="mailto:whizkidworldllp@gmail.com">whizkidworldllp@gmail.com</a></p>
-
+<p>Whizkid World LLP. Questions or requests about this policy: <strong><a href="mailto:whizkidworldllp@gmail.com">whizkidworldllp@gmail.com</a></strong></p>
 <h2>Changes</h2>
-<p>We may update this policy as the app evolves. Material changes will be
-reflected on this page with an updated effective date.</p>
+<p>We may update this policy as the app evolves. Material changes will be reflected on this page with an updated effective date.</p>
 
 <footer>
-<p>Whizkid World LLP &middot; <a href="/">whizkidworld.in</a></p>
+<p>Whizkid World LLP &middot; <a href="/">games.whizkidworld.in</a></p>
 </footer>
 
 </body>
