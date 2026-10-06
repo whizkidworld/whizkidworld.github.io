@@ -1,0 +1,18 @@
+# Authorised sellers of ad inventory for the Whiz Kid World LLP apps.
+#
+# One file at the apex covers BOTH apps — Sudoku and Mind the Top — because
+# app-ads.txt authorises the *publisher account*, not the app, and both serve
+# from the same AdMob publisher id.
+#
+# It must be reachable at https://whizkidworld.in/app-ads.txt (the apex, not
+# www), and the same domain must be entered as the developer website on each
+# app's Play listing, or the crawler never comes looking.
+#
+# f08c47fec0942fa0 is Google's own TAG id. It is identical for every publisher
+# and is not a secret.
+#
+# Do not empty this file to "disable" it. app-ads.txt is a whitelist: present
+# and empty tells every buyer to refuse this publisher's inventory, which is
+# strictly worse than the file being absent. Delete it instead.
+
+google.com, pub-2075423300847559, DIRECT, f08c47fec0942fa0
