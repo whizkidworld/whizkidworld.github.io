@@ -1,6 +1,6 @@
 # whizkidworld.in
 
-The public site of Whiz Kid World LLP: each game's page, privacy policy and data-deletion page,
+The public site of Whizkid World LLP: each game's page, privacy policy and data-deletion page,
 and the shared `app-ads.txt`. Plain HTML and one stylesheet. There is no build step, no
 JavaScript, no CDN and no webfont: a privacy policy that fetches a font from a third party while
 explaining what it collects is not a good look.

@@ -1,4 +1,4 @@
-# Authorised sellers of ad inventory for the Whiz Kid World LLP apps.
+# Authorised sellers of ad inventory for the Whizkid World LLP apps.
 #
 # One file at the apex covers BOTH apps — Sudoku and Mind the Top — because
 # app-ads.txt authorises the *publisher account*, not the app, and both serve
