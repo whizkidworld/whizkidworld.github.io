@@ -17,7 +17,8 @@ organisation by the TXT record `_github-pages-challenge-whizkidworld`; keep it.
 
 - **Published URLs are permanent.** They are declared in Play Console and built into the apps:
   `/sudoku/privacy/` (with its `#deleting` anchor), `/sudoku/delete-data/`,
-  `/mindthetop/privacy/`, `/app-ads.txt`. Never move or rename them.
+  `/mindthetop/privacy/`, `/amazing-arrows/privacy/`, `/app-ads.txt`. Never move or rename
+  them.
 - **`app-ads.txt` stays at the site root and is never emptied.** AdMob finds it because each
   Play listing's website is `https://games.whizkidworld.in`. An empty file tells buyers to refuse
   the publisher's inventory, which is worse than no file.
@@ -25,6 +26,8 @@ organisation by the TXT record `_github-pages-challenge-whizkidworld`; keep it.
   the guard tests that check it against the code. Change the text there first, then copy it here.
   - Sudoku: `docs/PRIVACY_POLICY.md` in `nitishbarbaria/Sudoku`.
   - Mind the Top: `site/` in `nitishbarbaria/Puzzle_Match`, the copy this site was seeded from.
+  - Amazing Arrows: `site/` in `nitishbarbaria/Arrow_Puzzle` (source text
+    `docs/PRIVACY_POLICY.md`).
 - **Nothing here may take payments or show ads.** GitHub Pages' terms exclude sites mainly
   for commercial transactions; information pages for free apps are what it is for.
 
