@@ -27,7 +27,7 @@ organisation by the TXT record `_github-pages-challenge-whizkidworld`; keep it.
   - Amazing Arrows: `site/` in the Amazing Arrows repository (source text
     `docs/PRIVACY_POLICY.md`).
 - **Information pages only:** nothing here takes payments or shows ads.
-- **No prices on any page** (owner, 2026-10-25): each game shows its own prices before a
+- **No prices on any page** (owner, 2026-10-24): each game shows its own prices before a
   purchase.
 
 ## Checking it locally
