@@ -1,8 +1,8 @@
 # Authorised sellers of ad inventory for the Whizkid World LLP apps.
 #
-# One file at the site root covers BOTH apps — Sudoku and Mind the Top — because
-# app-ads.txt authorises the *publisher account*, not the app, and both serve
-# from the same AdMob publisher id.
+# One file at the site root covers EVERY app — Sudoku, Mind the Top and
+# Amazing Arrows — because app-ads.txt authorises the *publisher account*,
+# not the app, and all of them serve from the same AdMob publisher id.
 #
 # It must be reachable at https://games.whizkidworld.in/app-ads.txt, and that
 # exact host must be entered as the developer website on each
