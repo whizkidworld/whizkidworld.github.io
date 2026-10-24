@@ -83,7 +83,7 @@ page = f'''<!doctype html>
 {chr(10).join(body)}
 
 <footer>
-<p>Whizkid World LLP &middot; <a href="/">games.whizkidworld.in</a></p>
+<p>&copy; 2026 Whizkid World LLP &middot; <a href="/">games.whizkidworld.in</a></p>
 </footer>
 
 </body>
