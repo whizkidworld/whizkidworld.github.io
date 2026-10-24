@@ -19,13 +19,17 @@ daily-challenge history, your profile, every preference and any game in progress
 a few small notes the app needs to behave correctly: whether you own Remove ads, the age range
 Google Play gave the app, the daily reminder's schedule, whether you declined notifications, and
 a marker that stops an erased cloud save from coming back. Uninstalling the app removes
-everything.</p>
+everything on the phone.</p>
 
 <h2>What the app cannot delete for you</h2>
 <ul>
   <li><strong>Crash reports.</strong> Firebase Crashlytics keeps them for 90 days and then
   deletes them. A report carries nothing that identifies you, so we have no way to find yours
   among others and delete it sooner.</li>
+  <li><strong>Usage statistics.</strong> They are anonymous, so the same applies: Google
+  Analytics deletes them after 14 months.</li>
+  <li><strong>Android's backup.</strong> If backup is on for your phone, Android keeps a copy of
+  the game's data in your Google account. Delete it in your phone's backup settings.</li>
   <li><strong>Google Play Games.</strong> If you have used it, its cloud save, leaderboard
   entries and achievements are held by Google under your account, not by us. If you are signed
   in to Play Games when you use <strong>Delete all app data</strong>, the app deletes its cloud
