@@ -39,9 +39,10 @@ All four are described below.</p>
   <li>If the game crashes, a report goes to Google Firebase Crashlytics so we
       can fix it. It carries no name, email or game data, and is deleted after
       90 days.</li>
-  <li>When you start, finish or leave a game, or choose a theme, a short note
-      goes to Google Analytics for Firebase &mdash; the mode, the score, the
-      theme &mdash; so we can see how the game is played. It never uses your
+  <li>When you start, finish or leave a game, choose a theme, or accept the
+      Terms of Use, a short note goes to Google Analytics for Firebase &mdash;
+      the mode, the score, the theme, the version of the terms &mdash; so we
+      can see how the game is played. It never uses your
       advertising ID.</li>
   <li>If you use Google Play Games, the game tells it which achievements you
       have earned, posts your scores to its leaderboards, and saves your
@@ -70,6 +71,7 @@ phone.)</p>
   <tr><td>Which items you have bought</td><td>To unlock paid themes and to stop showing you ads between games.</td></tr>
   <tr><td>The name you type and the piece you choose as your picture</td><td>To show them on the Player tab. The name is optional; without one the game shows &ldquo;Player&rdquo;.</td></tr>
   <tr><td>Achievements earned, and counts of games played, clean games and pops</td><td>To award achievements and show your progress toward them.</td></tr>
+  <tr><td>Which version of the Terms of Use you accepted, and when</td><td>So the game asks once, and again only when the terms change.</td></tr>
   <tr><td>Whether you turned on the daily reminder, and the time you chose for it</td><td>To remind you, at most once a day, when the Daily is unplayed. The reminder is set on your phone by the game itself; no server sends it, and nothing is sent anywhere to make it work. If you allow <em>Alarms &amp; reminders</em> for the game in Android&rsquo;s settings, the reminder arrives at the exact time you chose rather than when Android next gets round to it; that permission only lets the game set its own reminder, and reads nothing.</td></tr>
 </table>
 
@@ -176,7 +178,7 @@ making the game, and on in the version you install from Google Play.</p>
 <h3>Analytics &mdash; Google Analytics for Firebase</h3>
 <p>To learn how the game is actually played &mdash; whether people finish a
 first game, which mode they come back to, which settings they change &mdash;
-the game sends a short note to Google Analytics for Firebase at four
+the game sends a short note to Google Analytics for Firebase at five
 moments:</p>
 <ul>
   <li><strong>A game starts</strong> (your first drop): the mode, the theme,
@@ -186,6 +188,8 @@ moments:</p>
   <li><strong>A game is left</strong> before it ends: the mode and the
       score.</li>
   <li><strong>A theme is chosen</strong>: which one.</li>
+  <li><strong>The Terms of Use are accepted</strong>, on the card shown
+      before the first game: which version of the terms.</li>
 </ul>
 <p>Firebase adds what it records for every app that uses it: that the app was
 opened or updated, how long it was in use, a purchase made through Google Play
